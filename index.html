@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <meta name="author" content="creathings.id" />
+
+    <meta name="description" content="Website penjualan untuk UMKM" />
+
+    <!-- Document title -->
+
+    <title>Srirejeki</title>
+
+    <!-- Stylesheets & Fonts -->
+    <link href="./assets/css/plugins.css" rel="stylesheet" />
+
+    <link href="./assets/css/style.css" rel="stylesheet" />
+
+    <link href="./assets/css/responsive.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  </head>
+
+  <body>
+    <!-- Body Inner -->
+    <div class="body-inner">
+      <!-- Header -->
+      <header id="header" class="shadow" data-responsive-fixed="true">
+        <div class="header-inner">
+          <div class="container-fluid">
+            <!--Logo-->
+            <div id="logo">
+              <a
+                href="./index.html"
+                class="logo"
+                data-src-dark="./assets/images/logo.png"
+              >
+                <img src="./assets/images/logo.png" alt="Polo Logo" />
+              </a>
+            </div>
+            <!--End: Logo-->
+
+            <!-- Search -->
+            <div id="search">
+              <div id="search-logo">
+                <img src="./assets/images/logo.png" alt="Polo Logo" />
+              </div>
+
+              <button
+                id="btn-search-close"
+                class="btn-search-close"
+                aria-label="Close search form"
+              >
+                <i class="icon-x"></i>
+              </button>
+
+              <form
+                class="search-form"
+                action="search-results-page.html"
+                method="get"
+              >
+                <input
+                  class="form-control"
+                  name="q"
+                  type="search"
+                  placeholder="Cari..."
+                  autocomplete="off"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  spellcheck="false"
+                />
+
+                <span class="text-muted"
+                  >Tulis kata kunci pencarian dan tekan "ENTER" atau "ESC" untuk
+                  keluar</span
+                >
+              </form>
+            </div>
+            <!-- end: search -->
+
+            <!--Header Extras-->
+            <div class="header-extras">
+              <ul>
+                <li>
+                  <!--search icon-->
+                  <a id="btn-search" href="#"> <i class="icon-search1"></i></a>
+                  <!--end: search icon-->
+                </li>
+
+                <li>
+                  <!--shopping cart-->
+                  <div id="shopping-cart" class="p-dropdown">
+                    <a href="shop-cart.html">
+                      <!-- <span class="shopping-cart-items">8</span> -->
+                      <i class="icon-shopping-cart1"></i>
+                    </a>
+
+                    <div class="p-dropdown-content">
+                      <div class="widget-mycart">
+                        <h4>Keranjang</h4>
+
+                        <div class="cart-item">
+                          <div class="cart-product-meta">
+                            <a href="#">Belum ada keranjang</a>
+                          </div>
+                        </div>
+
+                        <hr />
+
+                        <div class="cart-total">
+                          <div class="cart-total-labels">
+                            <span>Subtotal</span>
+
+                            <span><strong>Total</strong></span>
+                          </div>
+
+                          <div class="cart-total-prices">
+                            <span>0</span>
+
+                            <span><strong>0$</strong></span>
+                          </div>
+                        </div>
+
+                        <div class="cart-buttons text-right">
+                          <button class="btn btn-xs">Checkout</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end: shopping cart-->
+                </li>
+              </ul>
+            </div>
+            <!--end: Header Extras-->
+
+            <!--Navigation Resposnive Trigger-->
+            <div id="mainMenu-trigger">
+              <button class="lines-button x">
+                <span class="lines"></span>
+              </button>
+            </div>
+            <!--end: Navigation Resposnive Trigger-->
+
+            <!--Navigation-->
+            <div id="mainMenu">
+              <div class="container-fluid">
+                <nav>
+                  <ul>
+                    <li><a href="./index.html">Beranda</a></li>
+                    <li><a href="./products.html">Produk</a></li>
+                    <li><a href="./categories.html">Kategori</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <!--END: NAVIGATION-->
+          </div>
+        </div>
+      </header>
+      <!-- end: Header -->
+
+      <!-- swiper -->
+      <!-- mobile -->
+      <div class="d-block d-md-none">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./assets/images/banners/banner-peyek-desktop.png" alt="" style="width: 100%"></div>
+            <div class="swiper-slide"><img src="./assets/images/banners/banner-mie-desktop.png" alt="" style="width: 100%"></div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+  
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <!-- desktop -->
+      <div class="d-none d-md-block mt-5 container-fluid">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./assets/images/banners/banner-peyek-desktop.png" alt="" class="rounded" style="width: 100%"></div>
+            <div class="swiper-slide"><img src="./assets/images/banners/banner-mie-desktop.png" alt="" class="rounded" style="width: 100%"></div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+  
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <!-- end: swiper -->
+
+      <!-- highlight -->
+      <div class="mt-5">
+        <div class="container-fluid mb-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <h4 class="m-0">Produk Terbaik Kami</h4>
+            <a href="./products.html"><h5 class="text-primary">Lihat semua</h5></a>
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="d-block d-md-none container-fluid" style="overflow: auto">
+          <div class="d-flex" style="gap: 1rem; width: max-content">
+            <div class="product m-0" style="width: 130px !important">
+              <div class="product-image rounded">
+                <a href="#"
+                  ><img
+                    alt="Shop product image!"
+                    src="./assets/images/products/camilan.png"
+                /></a>
+              </div>
+              <div class="product-description">
+                <div class="product-title">
+                  <h5><a href="#">Rempeyek</a></h5>
+                </div>
+                <div class="product-price m-0 text-left w-100">
+                  <h5 class="text-primary">Rp 10.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="product m-0" style="width: 130px !important">
+              <div class="product-image rounded">
+                <a href="#"
+                  ><img
+                    alt="Shop product image!"
+                    src="./assets/images/products/makanan.png"
+                /></a>
+              </div>
+              <div class="product-description">
+                <div class="product-title">
+                  <h5><a href="#">Mie Mocav</a></h5>
+                </div>
+                <div class="product-price m-0 text-left w-100">
+                  <h5 class="text-primary">Rp 8.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="product m-0" style="width: 130px !important">
+              <div class="product-image rounded">
+                <a href="#"
+                  ><img
+                    alt="Shop product image!"
+                    src="./assets/images/products/kerajinan.png"
+                /></a>
+              </div>
+              <div class="product-description">
+                <div class="product-title">
+                  <h5><a href="#">Perhiasan Custom</a></h5>
+                </div>
+                <div class="product-price m-0 text-left w-100">
+                  <h5 class="text-primary">Rp 325.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="product m-0" style="width: 130px !important">
+              <div class="product-image rounded">
+                <a href="#"
+                  ><img
+                    alt="Shop product image!"
+                    src="./assets/images/products/tas.png"
+                /></a>
+              </div>
+              <div class="product-description">
+                <div class="product-title">
+                  <h5><a href="#">Tas Rajut</a></h5>
+                </div>
+                <div class="product-price m-0 text-left w-100">
+                  <h5 class="text-primary">Rp 35.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="product m-0" style="width: 130px !important">
+              <div class="product-image rounded">
+                <a href="#"
+                  ><img
+                    alt="Shop product image!"
+                    src="./assets/images/products/camilan.png"
+                /></a>
+              </div>
+              <div class="product-description">
+                <div class="product-title">
+                  <h5><a href="#">Rempeyek</a></h5>
+                </div>
+                <div class="product-price m-0 text-left w-100">
+                  <h5 class="text-primary">Rp 10.000</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- desktop -->
+        <div class="d-none d-md-block container-fluid">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="product">
+                <div class="product-image rounded">
+                  <a href="#"
+                    ><img
+                      alt="Shop product image!"
+                      src="./assets/images/products/camilan.png"
+                  /></a>
+                  <div class="product-overlay" data-lightbox="ajax">
+                    <a href="#">Lihat produk</a>
+                  </div>
+                </div>
+                <div class="product-description">
+                  <div class="product-title">
+                    <h5><a href="#">Rempeyek</a></h5>
+                  </div>
+                  <div class="product-price m-0 text-left w-100">
+                    <h5 class="text-primary">Rp 10.000</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="product">
+                <div class="product-image rounded">
+                  <a href="#"
+                    ><img
+                      alt="Shop product image!"
+                      src="./assets/images/products/makanan.png"
+                  /></a>
+                  <div class="product-overlay" data-lightbox="ajax">
+                    <a href="#">Lihat produk</a>
+                  </div>
+                </div>
+                <div class="product-description">
+                  <div class="product-title">
+                    <h5><a href="#">Mie Mocav</a></h5>
+                  </div>
+                  <div class="product-price m-0 text-left w-100">
+                    <h5 class="text-primary">Rp 8.000</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="product">
+                <div class="product-image rounded">
+                  <a href="#"
+                    ><img
+                      alt="Shop product image!"
+                      src="./assets/images/products/kerajinan.png"
+                  /></a>
+                  <div class="product-overlay" data-lightbox="ajax">
+                    <a href="#">Lihat produk</a>
+                  </div>
+                </div>
+                <div class="product-description">
+                  <div class="product-title">
+                    <h5><a href="#">Perhiasan Custom</a></h5>
+                  </div>
+                  <div class="product-price m-0 text-left w-100">
+                    <h5 class="text-primary">Rp 325.000</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="product">
+                <div class="product-image rounded">
+                  <a href="#"
+                    ><img
+                      alt="Shop product image!"
+                      src="./assets/images/products/tas.png"
+                  /></a>
+                  <div class="product-overlay" data-lightbox="ajax">
+                    <a href="#">Lihat produk</a>
+                  </div>
+                </div>
+                <div class="product-description">
+                  <div class="product-title">
+                    <h5><a href="#">Tas Rajut</a></h5>
+                  </div>
+                  <div class="product-price m-0 text-left w-100">
+                    <h5 class="text-primary">Rp 35.000</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="product">
+                <div class="product-image rounded">
+                  <a href="#"
+                    ><img
+                      alt="Shop product image!"
+                      src="./assets/images/products/camilan.png"
+                  /></a>
+                  <div class="product-overlay" data-lightbox="ajax">
+                    <a href="#">Lihat produk</a>
+                  </div>
+                </div>
+                <div class="product-description">
+                  <div class="product-title">
+                    <h5><a href="#">Rempeyek</a></h5>
+                  </div>
+                  <div class="product-price m-0 text-left w-100">
+                    <h5 class="text-primary">Rp 10.000</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="product">
+                <div class="product-image rounded">
+                  <a href="#"
+                    ><img
+                      alt="Shop product image!"
+                      src="./assets/images/products/makanan.png"
+                  /></a>
+                  <div class="product-overlay" data-lightbox="ajax">
+                    <a href="#">Lihat produk</a>
+                  </div>
+                </div>
+                <div class="product-description">
+                  <div class="product-title">
+                    <h5><a href="#">Mie Mocav</a></h5>
+                  </div>
+                  <div class="product-price m-0 text-left w-100">
+                    <h5 class="text-primary">Rp 8.000</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end: highlight -->
+
+      <!-- category -->
+      <div class="container-fluid mt-5 py-4 bg-light">
+        <h4 class="mb-3 text-center">Kategori Pilihan</h4>
+        <div class="row m-0 justify-content-center">
+          <div class="col-6 col-md-2 p-2">
+            <div
+              class="rounded p-4 d-flex flex-column align-items-center justify-content-center bg-white"
+            >
+              <img src="./assets/images/categories/camilan.png" height="75" alt="" />
+              <h6>Camilan</h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 p-2">
+            <div
+              class="rounded p-4 d-flex flex-column align-items-center justify-content-center bg-white"
+            >
+              <img src="./assets/images/categories/makanan.png" height="75" alt="" />
+              <h6>Makanan</h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 p-2">
+            <div
+              class="rounded p-4 d-flex flex-column align-items-center justify-content-center bg-white"
+            >
+              <img src="./assets/images/categories/kerajinan.png" height="75" alt="" />
+              <h6>Kerajinan</h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 p-2">
+            <div
+              class="rounded p-4 d-flex flex-column align-items-center justify-content-center bg-white"
+            >
+              <img src="./assets/images/categories/tas.png" height="75" alt="" />
+              <h6>Tas</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end: category -->
+
+      <!-- banner -->
+      <div class="container-fluid my-5">
+        <!-- mobile -->
+        <img
+          class="rounded d-block d-md-none"
+          height="100"
+          src="./assets/images/banners/banner-mie-desktop.png"
+          alt=""
+          style="width: 100%; object-fit: cover;"
+        />
+        <!-- desktop -->
+        <img
+          class="rounded d-none d-md-block"
+          height="200"
+          src="./assets/images/banners/banner-mie-desktop.png"
+          alt=""
+          style="width: 100%; object-fit: cover;"
+        />
+      </div>
+      <!-- end: banner -->
+
+      <!-- recent product -->
+      <div class="mt-5">
+        <div class="container-fluid mb-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <h4 class="m-0">Produk Terbaru</h4>
+            <a href="./products.html"><h5 class="text-primary">Lihat semua</h5></a>
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="d-block d-md-none container-fluid" style="overflow: auto">
+          <div class="d-flex" style="gap: 1rem; width: max-content">
+            <div class="product m-0" style="width: 130px !important">
+              <div class="product-image rounded">
+                <a href="#"
+                  ><img
+                    alt="Shop product image!"
+                    src="./assets/images/products/camilan.png"
+                /></a>
+              </div>
+              <div class="product-description">
+                <div class="product-title">
+                  <h5><a href="#">Rempeyek</a></h5>
+                </div>
+                <div class="product-price m-0 text-left w-100">
+                  <h5 class="text-primary">Rp 10.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="product m-0" style="width: 130px !important">
+              <div class="product-image rounded">
+                <a href="#"
+                  ><img
+                    alt="Shop product image!"
+                    src="./assets/images/products/makanan.png"
+                /></a>
+              </div>
+              <div class="product-description">
+                <div class="product-title">
+                  <h5><a href="#">Mie Mocav</a></h5>
+                </div>
+                <div class="product-price m-0 text-left w-100">
+                  <h5 class="text-primary">Rp 8.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="product m-0" style="width: 130px !important">
+              <div class="product-image rounded">
+                <a href="#"
+                  ><img
+                    alt="Shop product image!"
+                    src="./assets/images/products/kerajinan.png"
+                /></a>
+              </div>
+              <div class="product-description">
+                <div class="product-title">
+                  <h5><a href="#">Perhiasan Custom</a></h5>
+                </div>
+                <div class="product-price m-0 text-left w-100">
+                  <h5 class="text-primary">Rp 325.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="product m-0" style="width: 130px !important">
+              <div class="product-image rounded">
+                <a href="#"
+                  ><img
+                    alt="Shop product image!"
+                    src="./assets/images/products/tas.png"
+                /></a>
+              </div>
+              <div class="product-description">
+                <div class="product-title">
+                  <h5><a href="#">Tas Rajut</a></h5>
+                </div>
+                <div class="product-price m-0 text-left w-100">
+                  <h5 class="text-primary">Rp 35.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="product m-0" style="width: 130px !important">
+              <div class="product-image rounded">
+                <a href="#"
+                  ><img
+                    alt="Shop product image!"
+                    src="./assets/images/products/camilan.png"
+                /></a>
+              </div>
+              <div class="product-description">
+                <div class="product-title">
+                  <h5><a href="#">Rempeyek</a></h5>
+                </div>
+                <div class="product-price m-0 text-left w-100">
+                  <h5 class="text-primary">Rp 10.000</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- desktop -->
+        <div class="d-none d-md-block container-fluid">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="product">
+                <div class="product-image rounded">
+                  <a href="#"
+                    ><img
+                      alt="Shop product image!"
+                      src="./assets/images/products/camilan.png"
+                  /></a>
+                  <div class="product-overlay" data-lightbox="ajax">
+                    <a href="#">Lihat produk</a>
+                  </div>
+                </div>
+                <div class="product-description">
+                  <div class="product-title">
+                    <h5><a href="#">Rempeyek</a></h5>
+                  </div>
+                  <div class="product-price m-0 text-left w-100">
+                    <h5 class="text-primary">Rp 10.000</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="product">
+                <div class="product-image rounded">
+                  <a href="#"
+                    ><img
+                      alt="Shop product image!"
+                      src="./assets/images/products/makanan.png"
+                  /></a>
+                  <div class="product-overlay" data-lightbox="ajax">
+                    <a href="#">Lihat produk</a>
+                  </div>
+                </div>
+                <div class="product-description">
+                  <div class="product-title">
+                    <h5><a href="#">Mie Mocav</a></h5>
+                  </div>
+                  <div class="product-price m-0 text-left w-100">
+                    <h5 class="text-primary">Rp 8.000</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="product">
+                <div class="product-image rounded">
+                  <a href="#"
+                    ><img
+                      alt="Shop product image!"
+                      src="./assets/images/products/kerajinan.png"
+                  /></a>
+                  <div class="product-overlay" data-lightbox="ajax">
+                    <a href="#">Lihat produk</a>
+                  </div>
+                </div>
+                <div class="product-description">
+                  <div class="product-title">
+                    <h5><a href="#">Perhiasan Custom</a></h5>
+                  </div>
+                  <div class="product-price m-0 text-left w-100">
+                    <h5 class="text-primary">Rp 325.000</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="product">
+                <div class="product-image rounded">
+                  <a href="#"
+                    ><img
+                      alt="Shop product image!"
+                      src="./assets/images/products/tas.png"
+                  /></a>
+                  <div class="product-overlay" data-lightbox="ajax">
+                    <a href="#">Lihat produk</a>
+                  </div>
+                </div>
+                <div class="product-description">
+                  <div class="product-title">
+                    <h5><a href="#">Tas Rajut</a></h5>
+                  </div>
+                  <div class="product-price m-0 text-left w-100">
+                    <h5 class="text-primary">Rp 35.000</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="product">
+                <div class="product-image rounded">
+                  <a href="#"
+                    ><img
+                      alt="Shop product image!"
+                      src="./assets/images/products/camilan.png"
+                  /></a>
+                  <div class="product-overlay" data-lightbox="ajax">
+                    <a href="#">Lihat produk</a>
+                  </div>
+                </div>
+                <div class="product-description">
+                  <div class="product-title">
+                    <h5><a href="#">Rempeyek</a></h5>
+                  </div>
+                  <div class="product-price m-0 text-left w-100">
+                    <h5 class="text-primary">Rp 10.000</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="product">
+                <div class="product-image rounded">
+                  <a href="#"
+                    ><img
+                      alt="Shop product image!"
+                      src="./assets/images/products/makanan.png"
+                  /></a>
+                  <div class="product-overlay" data-lightbox="ajax">
+                    <a href="#">Lihat produk</a>
+                  </div>
+                </div>
+                <div class="product-description">
+                  <div class="product-title">
+                    <h5><a href="#">Mie Mocav</a></h5>
+                  </div>
+                  <div class="product-price m-0 text-left w-100">
+                    <h5 class="text-primary">Rp 8.000</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end: recent product -->
+
+      <!-- banner -->
+      <div class="container-fluid my-5">
+        <!-- mobile -->
+        <img
+          class="rounded d-block d-md-none"
+          src="./assets/images/banners/banner-peyek-desktop.png"
+          alt=""
+          style="width: 100%; object-fit: cover; object-position: bottom;"
+        />
+        <!-- desktop -->
+        <img
+          class="rounded d-none d-md-block"
+          height="300"
+          src="./assets/images/banners/banner-peyek-desktop.png"
+          alt=""
+          style="width: 100%; object-fit: cover; object-position: bottom;"
+        />
+      </div>
+      <!-- end: banner -->
+
+      <!-- whatsapp -->
+      <a href="https://wa.me/#">
+        <div
+          class="d-flex align-items-center justify-content-center p-3 bg-success text-white"
+        >
+          <i class="fab fa-whatsapp fa-lg mr-2"></i>
+          Bertanya melalui Whatsapp
+        </div>
+      </a>
+      <!-- end: whatsapp -->
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="copyright-content">
+          <div class="container-fluid">
+            <div class="copyright-text text-center">
+              &copy; 2022 Sriharjo. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end: Footer -->
+    </div>
+    <!-- end: Body Inner -->
+
+    <!-- Scroll top -->
+
+    <a id="scrollTop"
+      ><i class="icon-chevron-up1"></i><i class="icon-chevron-up1"></i
+    ></a>
+
+    <!--Plugins-->
+
+    <script src="./assets/js/jquery.js"></script>
+
+    <script src="./assets/js/plugins.js"></script>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--Template functions-->
+
+    <script src="./assets/js/functions.js"></script>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+  </body>
+</html>
